@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: 'b015b7f2-a071-427c-8f25-53047f5fb0af'
   imageRepository: 'custom1aksnginxapp1'
   containerRegistry: 'kiranac.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
+  dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
