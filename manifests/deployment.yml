@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: app1nginx 
-          image: kiranac.azurecr.io/app1nginx
+          image: kiranagalpady/garagenginx_image1:v1-release
           ports:
           - containerPort: 80
