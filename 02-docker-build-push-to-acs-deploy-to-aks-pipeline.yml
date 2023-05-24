@@ -11,12 +11,11 @@ resources:
 variables:
 
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '7c3b951c-1637-4873-ac07-e4066a76aa88'
-  imageRepository: 'app1nginx'
-  containerRegistry: 'kiranac.azurecr.io'
+  dockerRegistryServiceConnection: 'docker-hub-serviceconnection'
+  imageRepository: 'kiranagalpady/garagenginx_image1'
+  dockerRegistry: 'kiranagalpady'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
-  imagePullSecret: 'kiranac1458d5c9-auth'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
